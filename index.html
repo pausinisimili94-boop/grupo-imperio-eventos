@@ -106,6 +106,18 @@
     .stat-label{display:block;margin-top:18px;color:#fff;font-size:1rem;font-weight:850;letter-spacing:.01em}
     .stat-caption{display:block;margin-top:7px;color:#8f8f8f;font-size:.76rem;line-height:1.45}
 
+    /* Misión y visión */
+    .purpose-section{position:relative;background:linear-gradient(180deg,#101010 0%,#0b0b0b 100%);overflow:hidden}
+    .purpose-section:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;right:-250px;bottom:-300px;background:radial-gradient(circle,rgba(217,175,85,.13),transparent 68%);pointer-events:none}
+    .purpose-head{position:relative;display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,70px);align-items:end;margin-bottom:38px}
+    .purpose-head h2{max-width:620px}.purpose-head p{margin:0;max-width:650px;font-size:1.03rem;color:#c7c7c7}
+    .purpose-grid{position:relative;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .purpose-card{position:relative;min-height:300px;padding:34px 30px;border:1px solid rgba(217,175,85,.2);border-radius:26px;background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.015));box-shadow:var(--shadow);overflow:hidden}
+    .purpose-card:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-90px;top:-90px;background:radial-gradient(circle,rgba(217,175,85,.18),transparent 68%)}
+    .purpose-kicker{display:inline-block;color:var(--gold2);font-size:.74rem;font-weight:900;letter-spacing:.15em;text-transform:uppercase;margin-bottom:28px}
+    .purpose-card h3{font-size:clamp(2rem,4vw,3.2rem);margin-bottom:18px;color:#fff}
+    .purpose-card p{margin:0;color:#c5c5c5;font-size:1rem;line-height:1.78;max-width:650px}
+
     /* Nuestros valores */
     .values-section{position:relative;background:var(--cream);color:#111;overflow:hidden}
     .values-section:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;left:-250px;bottom:-290px;background:radial-gradient(circle,rgba(217,175,85,.18),transparent 68%);pointer-events:none}
@@ -123,6 +135,7 @@
       .hero:before{background:linear-gradient(0deg,rgba(0,0,0,.96) 0%,rgba(0,0,0,.68) 65%,rgba(0,0,0,.26) 100%)}
       .intro,.feature-box,.process,.contact-wrap,.agenda-layout{grid-template-columns:1fr}.visual-stack{height:520px}.service-grid{grid-template-columns:1fr 1fr}.feature-copy{padding:36px}.feature-img{min-height:460px}.process{gap:20px}
       .experience-head{grid-template-columns:1fr}.stats-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.stat-card{min-height:200px;padding:26px 22px}
+      .purpose-head{grid-template-columns:1fr;gap:18px}.purpose-grid{grid-template-columns:1fr 1fr}
       .values-head{grid-template-columns:1fr;gap:18px}.values-grid{grid-template-columns:1fr 1fr}.value-card:last-child{grid-column:1/-1}
     }
     @media(max-width:620px){
@@ -209,6 +222,31 @@
               <span class="stat-caption">Momentos personales diseñados con intención y detalle.</span>
             </article>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="purpose-section" id="mision-vision" aria-labelledby="mision-vision-title">
+      <div class="container">
+        <div class="purpose-head">
+          <div>
+            <span class="eyebrow">Nuestra esencia</span>
+            <h2 id="mision-vision-title">Misión y visión.</h2>
+          </div>
+          <p>Nuestro propósito define la manera en que trabajamos hoy y el camino que queremos construir para el futuro de Grupo Imperio M&amp;A Eventos.</p>
+        </div>
+
+        <div class="purpose-grid">
+          <article class="purpose-card">
+            <span class="purpose-kicker">Misión</span>
+            <h3>Crear experiencias memorables.</h3>
+            <p>Brindar soluciones integrales para eventos mediante mobiliario, decoración, ambientación y servicios personalizados, ofreciendo calidad, creatividad y atención profesional para convertir cada celebración en una experiencia memorable.</p>
+          </article>
+          <article class="purpose-card">
+            <span class="purpose-kicker">Visión</span>
+            <h3>Crecer con excelencia.</h3>
+            <p>Consolidar a Grupo Imperio M&amp;A Eventos como una empresa referente en la organización y producción integral de eventos en la región, reconocida por su calidad, innovación, responsabilidad y excelencia en el servicio, ampliando continuamente nuestra cobertura, infraestructura y oferta de servicios.</p>
+          </article>
         </div>
       </div>
     </section>
